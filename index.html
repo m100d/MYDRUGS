@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="estilo.css"
+    />
+    <meta charset="UTF-8" />
+    <title>YourDrugs</title>
+  </head>
+  <body>
+    <section id="topnav">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://mydrugsto.netlify.app/assets/img/whitelogo_noname.png" alt="Logo" />
+        </div>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="partypacks.html">Party Packs</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <i class="far fa-search" style="color: white"></i>
+            </li>
+            <li><button class="transparent-btn">Login</button></li>
+            <div class="mobilenav">
+              <hr />
+              <li><a href="/welcomeback">Welcome Back</a></li>
+              <li><a href="/newproducts">New Products</a></li>
+              <li><a href="/offers">Special Offers</a></li>
+              <li>
+                <button onClick="location.href='/shop.html'" class="blue-btn">
+                  Shop
+                </button>
+              </li>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="navbar">
+      <div class="nav">
+        <div class="title">MYDRUGS</div>
+        <div class="menu">
+          <ul>
+            <li><a href="/soon">Welcome Back</a></li>
+            <li><a href="/soon">New Products</a></li>
+            <li><a href="/soon">Special Offers</a></li>
+            <li>
+              <button onClick="location.href='shop.html'" class="blue-btn">
+                Shop
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero">
+      <!-- <video id="vidbg" autoplay muted loop>
+        <source src="./assets/video/bgsmoke.mp4" type="video/mp4" />
+      </video> -->
+      <div class="headtext">
+        <h4>The new myDrugs</h4>
+        <h1>Best quality.</h1>
+        <h1>Best delivery.</h1>
+        <h1>Best sequrity.</h1>
+        <h5>Prices as low as 0.0013 BTC.</h5>
+      </div>
+
+      <div class="img">
+        <img src="https://mydrugsto.netlify.app/assets/img/powder_explotion_hero.png" alt="IMG" />
+      </div>
+
+      <div class="textboxes">
+        <div class="textboxcontainer1">
+          <div class="textbox"><p>Fresh from our factory.</p></div>
+          <div class="textbox">
+            <p>Constantly quality-checked by our experts.</p>
+          </div>
+        </div>
+        <div class="textboxcontainer2">
+          <div class="textbox"><p>MDMA in its purest from.</p></div>
+          <div class="textbox"><p>Delivery guaranteed within 5 days.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newlineup">
+      <div class="text">
+        <h2>Our explosive new lineup.</h2>
+        <h3>For the best MDMA experience <br />Ever.</h3>
+      </div>
+      <div class="pills">
+        <img src="https://mydrugsto.netlify.app/assets/img/pills/blue_pill.351327e7.png" alt="pill1" />
+        <img src="https://mydrugsto.netlify.app/assets/img/pills/green_pill.a407a62b.png" alt="pill2" />
+        <img src="https://mydrugsto.netlify.app/assets/img/pills/yellow_pill.c0319c8e.png" alt="pill3" />
+      </div>
+      <h4 class="save20off">Save 20% off your first order.</h4>
+      <button onClick="location.href='/shop.html'" class="blue-btn">
+        Shop now
+        <i
+          class="far fa-arrow-right"
+          style="color: white; font-weight: bold"
+        ></i>
+      </button>
+    </section>
+
+    <section id="footer">
+      <div class="text">
+        MyDrugz.to is a fan recreation of
+        <a href="http://mydrugs.to/">HTSDOF</a> (a netflix serie), and does not
+        actually sell any illegal/controlled substances.
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</html>

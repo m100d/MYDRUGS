@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="partypacksestilo.css"
+    />
+    <meta charset="UTF-8" />
+    <title>Party Packs - MyDrugs</title>
+  </head>
+  <body>
+    <section id="topnav">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://mydrugsto.netlify.app/assets/img/whitelogo_noname.png" alt="Logo" />
+        </div>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="partypacks.html" class="active">Party Packs</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <i class="far fa-search" style="color: white"></i>
+            </li>
+            <li><button class="transparent-btn">Login</button></li>
+            <div class="mobilenav">
+              <hr />
+              <li><a href="/welcomeback">Welcome Back</a></li>
+              <li><a href="/newproducts">New Products</a></li>
+              <li><a href="/offers">Special Offers</a></li>
+              <li>
+                <button onClick="location.href='shop.html'" class="blue-btn">
+                  Shop
+                </button>
+              </li>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="navbar">
+      <div class="nav">
+        <div class="pagenav"><a href="/">home</a> > party-packs</div>
+        <div class="menu">
+          <ul>
+            <li><a href="/soon">Welcome Back</a></li>
+            <li><a href="/soon">New Products</a></li>
+            <li><a href="/soon">Special Offers</a></li>
+            <li>
+              <button onClick="location.href='/shop.html'" class="blue-btn">
+                Shop
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop-category">
+      <div class="container">
+        <div class="cattitle">Party Packs</div>
+        <div class="partypack">
+          <div class="noitems">
+            <h3>No items to show</h3>
+          </div>
+          <div class="itemcards">
+            <!-- <div class="card">
+              <div class="image">
+                <img src="/assets/img/pink_pill.4f8471b2.png" alt="" />
+              </div>
+              <div class="prodinf"></div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="text">
+        MyDrugz.to is a fan recreation of
+        <a href="http://mydrugs.to/">HTSDOF</a> (a netflix serie), and does not
+        actually sell any illegal/controlled substances.
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</html>
