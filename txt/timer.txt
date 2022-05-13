@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html{
+    background-color:rgba(6,0,12,255);
+   color:white;
+   text-align:center;
+   position: absolute;
+   
+  
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    font-family: monospace;
+}
+section {
+        padding: 0px;
+      }
+
+p {
+    text-align: center;
+  font-size: 60px;
+}
+img {
+        display: block;
+        margin: 10px auto 10px;
+        max-width: 100%;
+      }
+</style>
+</head>
+<body>
+    <section>
+        
+
+        <img srcset="img/bonuslife-320w.jpg 320w,
+        img/bonuslife-480w.jpg 480w,
+        img/bonuslife-800.jpg 800w"
+      sizes="(max-width: 2500px) 2500px,
+       (max-width: 500px) 500px,
+       800px"
+       src="img/bonuslife-800.jpg" alt="BonusLife!" >
+
+        
+
+        
+
+        
+      </section>
+    
+
+<h1>Releasing in...</h1>
+<button
+  class="discord"
+  onClick="location.href='https://discord.gg/V3ThMyThsR'"
+>
+  <i class="fab fa-discord"></i> check Our discord for news
+</button>
+
+<p id="timer"></p>
+
+<script>
+// Aquí pones la fecha Mes Día, Año Hora
+var countDownDate = new Date("Sep 1, 2022 20:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "NOW!";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
