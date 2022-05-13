@@ -1,130 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="estilo.css"
-    />
-    <meta charset="UTF-8" />
-    <title>coming soon great update...</title>
-  </head>
-  <body>
-    <section id="topnav">
-      <div class="nav">
-        <div class="logo">
-          <img src="https://mydrugsto.netlify.app/assets/img/whitelogo_noname.png" alt="Logo" />
-        </div>
-        <div class="menu">
-          <ul class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="premium.html">Premium</a></li>
-            <li><a href="partypacks.html">Party Packs</a></li>
-            <li><a href="safety.html">Safety</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <i class="far fa-search" style="color: white"></i>
-            </li>
-            <li><button class="transparent-btn">Login</button></li>
-            <div class="mobilenav">
-              <hr />
-              <li><a href="/welcomeback">Welcome Back</a></li>
-              <li><a href="/newproducts">New Products</a></li>
-              <li><a href="/offers">Special Offers</a></li>
-              <li>
-                <button onClick="location.href='shop.html'" class="blue-btn">
-                  Shop
-                </button>
-              </li>
-            </div>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="navbar">
-      <div class="nav">
-        <div class="title">MYDRUGS</div>
-        <div class="menu">
-          <ul>
-            <li><a href="/soon">Welcome Back</a></li>
-            <li><a href="/soon">New Products</a></li>
-            <li><a href="/soon">Special Offers</a></li>
-            <li>
-              <button onClick="location.href='shop.html'" class="blue-btn">
-                Shop
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href="fondotimer.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html{
+    background-color:black;
+   color:white;
+   text-align:center;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    font-family: monospace;
+}
 
-    <section id="hero">
-      <!-- <video id="vidbg" autoplay muted loop>
-        <source src="./assets/video/bgsmoke.mp4" type="video/mp4" />
-      </video> -->
-      <div class="headtext">
-        <h4>The new myDrugs</h4>
-        <h1>Best quality.</h1>
-        <h1>Best delivery.</h1>
-        <h1>Best sequrity.</h1>
-        <h5>coming soon great update...</h5>
-      </div>
+p {
+  text-align: center;
+  font-size: 60px;
+}
 
-      <div class="img">
-        <img src="https://mydrugsto.netlify.app/assets/img/powder_explotion_hero.png" alt="IMG" />
-      </div>
+</style>
+</head>
+<body>
+  <img src="img/bonuslife.jpg" alt="BonusLife!" width="1500px" height="500px">
+   
+   
+  
 
-      <div class="textboxes">
-        <div class="textboxcontainer1">
-          <div class="textbox"><p>Fresh from our factory.</p></div>
-          <div class="textbox">
-            <p>Constantly quality-checked by our experts.</p>
-          </div>
-        </div>
-        <div class="textboxcontainer2">
-          <div class="textbox"><p>MDMA in its purest from.</p></div>
-          <div class="textbox"><p>Delivery guaranteed within 5 days.</p></div>
-        </div>
-      </div>
-    </section>
 
-    <section id="newlineup">
-      <div class="text">
-        <h2>Our explosive new lineup.</h2>
-        <h3>For the best MDMA experience <br />Ever.</h3>
-      </div>
-      <div class="pills">
-        <img src="https://mydrugsto.netlify.app/assets/img/pills/blue_pill.351327e7.png" alt="pill1" />
-        <img src="https://mydrugsto.netlify.app/assets/img/pills/green_pill.a407a62b.png" alt="pill2" />
-        <img src="https://mydrugsto.netlify.app/assets/img/pills/yellow_pill.c0319c8e.png" alt="pill3" />
-      </div>
-      <h4 class="save20off">Save 20% off your first order.</h4>
-      <button onClick="location.href='/shop.html'" class="blue-btn">
-        Shop now
-        <i
-          class="far fa-arrow-right"
-          style="color: white; font-weight: bold"
-        ></i>
-      </button>
-    </section>
+                
+<h1>Releasing in...
+  <button
+  class="discord"
+  onClick="location.href='https://discord.gg/V3ThMyThsR'"
+>
+  <i class="fab fa-discord"></i> check Our discord for news
+</button>
 
-    <section id="footer">
-      <div class="text">
-        MyDrugs is a fan recreation of
-        <a href="http://mydrugs.to/">HTSDOF</a> (a netflix serie), and does not
-        actually sell any illegal/controlled substances.
-      </div>
-    </section>
-  </body>
+<p id="timer"></p>
 
+<script>
+// Aquí pones la fecha Mes Día, Año Hora
+var countDownDate = new Date("Sep 1, 2022 20:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+    
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "NOW!";
+  }
+}, 1000);
+</script>
+
+</body>
   <script>
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
