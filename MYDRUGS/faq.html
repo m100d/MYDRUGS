@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="faqestilos.css"
+    />
+    <meta charset="UTF-8" />
+    <title>FAQ - MyDrugs</title>
+  </head>
+  <body>
+    <section id="topnav">
+      <div class="nav">
+        <div class="logo">
+          <img src="https://mydrugsto.netlify.app/assets/img/whitelogo_noname.png" alt="Logo" />
+        </div>
+        <div class="menu">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="partypacks.html">Party Packs</a></li>
+            <li><a href="safety.html">Safety</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <i class="far fa-search" style="color: white"></i>
+            </li>
+            <li><button class="transparent-btn">Login</button></li>
+            <div class="mobilenav">
+              <hr />
+              <li><a href="/welcomeback">Welcome Back</a></li>
+              <li><a href="/newproducts">New Products</a></li>
+              <li><a href="/offers">Special Offers</a></li>
+              <li>
+                <button onClick="location.href='shop.html'" class="blue-btn">
+                  Shop
+                </button>
+              </li>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="navbar">
+      <div class="nav">
+        <div class="pagenav"><a href="/">home</a> > faq</div>
+        <div class="menu">
+          <ul>
+            <li><a href="/soon">Welcome Back</a></li>
+            <li><a href="/soon">New Products</a></li>
+            <li><a href="/soon">Special Offers</a></li>
+            <li>
+              <button onClick="location.href='shop.html'" class="blue-btn">
+                Shop
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop-category">
+      <div class="container">
+        <div class="faq">
+          <h2>
+            Is my purshase completely secure through your shop when I make a
+            Purchase?
+          </h2>
+
+          <p>
+            Yes. Just add the desired quantity to the cart and enter your
+            address at the checkout. Your personal data is automatically
+            encrypted using PGP and deleted after the order is dispatched. Our
+            team of professionals then packs the goods in clean-room conditions,
+            and ensures smooth and secure processing.
+          </p>
+
+          <br />
+          <h2>Can I really only pay with cryptocurrency?</h2>
+          <p>
+            Yes. We only accept payments in Bitcoin, Ripple, IOTA, and Ethereum.
+            The payment procedure is not complicated. You just need to set up a
+            suitable wallet. We do not offer Payback or other bonus systems. We
+            weren't born yesterday.
+          </p>
+          <br />
+          <h2>How can I receive my order anonymously?</h2>
+          <p>
+            Our shipping department operates around the clock to ensure fast and
+            risk-free shipping. The delivery ussually arrives within a few days.
+            Your order can be sent to any valid postal address, PO box, or
+            package station. Thanks to our highly complex and decentralized
+            system, the transfer to the logistics service provider is already
+            anonymous and cannot be traced back.
+          </p>
+          <br />
+          <h2>Is your product safe?</h2>
+          <p>
+            Nobody has claimed that doing drugs was safe. However as long as you
+            follow the guide in the Safety section there should not be any
+            issues. Do not take MDMA if you are also under any perscriptions or
+            doing any other drugs. It is also recomended not to take MDMA with
+            any sort of alcohol as it might cause irreversable damage to your
+            immune system and overall health.
+          </p>
+          <br />
+          <h2>Is any of this real?</h2>
+          <p>No. Of course not.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="text">
+        MyDrugs is a fan recreation of
+        <a href="http://mydrugs.to/">HTSDOF</a> (a netflix serie), and does not
+        actually sell any illegal/controlled substances.
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+</html>
